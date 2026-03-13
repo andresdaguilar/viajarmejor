@@ -39,7 +39,7 @@ export function PlanCard({
       <h3 className="text-xl font-semibold text-stone-900">{nombre}</h3>
       <p className="mt-2 text-sm text-stone-500">{descripcion}</p>
       <div className="mt-6 py-6 border-y border-stone-100">
-        <p className="font-serif text-4xl text-primary-600">
+        <p className="font-display text-4xl text-primary-600">
           Desde {moneda} {precio}
         </p>
         {precioMax > precio && (

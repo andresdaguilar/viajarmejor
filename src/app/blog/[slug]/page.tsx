@@ -93,7 +93,7 @@ export default async function ArticlePage({
             <span className="badge-primary mb-4 inline-block">
               {post.category}
             </span>
-            <h1 className="text-display-lg font-serif text-stone-900 mb-4">
+            <h1 className="text-display-lg font-display text-stone-900 mb-4">
               {post.title}
             </h1>
             <p className="text-xl text-stone-600 mb-8">{post.description}</p>

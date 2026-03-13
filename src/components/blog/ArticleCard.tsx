@@ -27,7 +27,7 @@ export function ArticleCard({ post }: { post: PostMeta }) {
         </span>
       </div>
       <div className="p-5">
-        <h3 className="font-serif text-lg font-semibold text-stone-900 mb-2 group-hover:text-primary-600 transition-colors line-clamp-2">
+        <h3 className="font-display text-lg font-semibold text-stone-900 mb-2 group-hover:text-primary-600 transition-colors line-clamp-2">
           {post.title}
         </h3>
         <p className="text-stone-500 text-sm mb-4 line-clamp-2">

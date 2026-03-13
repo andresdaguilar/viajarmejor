@@ -92,7 +92,7 @@ export default function SobreMiPage() {
             <div className="relative">
               <div className="relative aspect-[4/5] max-w-md mx-auto lg:mx-0 rounded-2xl overflow-hidden border-4 border-primary-100">
                 <Image
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600"
+                  src="/images/andy.jpg"
                   alt="Andy - Asesor de viajes"
                   fill
                   className="object-cover"
@@ -113,7 +113,7 @@ export default function SobreMiPage() {
                 Asesor de viajes y fundador de Viajar Mejor
               </p>
               <p className="text-stone-600 text-lg leading-relaxed">
-                Viajé a más de 55 países y 200 ciudades. No como influencer —
+                Viajé a más de 50 países y 200 ciudades. No como influencer —
                 sino como alguien que necesitaba entender cada destino antes de
                 llegar.
               </p>

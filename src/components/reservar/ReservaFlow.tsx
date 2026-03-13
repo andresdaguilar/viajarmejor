@@ -135,7 +135,7 @@ function ReservaFlowInner() {
                   <div>
                     <h4 className="font-semibold text-stone-900">{opt.nombre}</h4>
                     <p className="text-sm text-stone-500">{opt.tagline}</p>
-                    <p className="mt-2 font-serif text-2xl text-primary-600">
+                    <p className="mt-2 font-display text-2xl text-primary-600">
                       USD {opt.precio}–{opt.precioMax}
                     </p>
                   </div>

@@ -20,7 +20,7 @@ export function SobreMiPreview() {
             className="relative aspect-square max-w-md mx-auto lg:mx-0"
           >
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600"
+              src="/images/andy.jpg"
               alt="Andy - Asesor de viajes"
               fill
               className="object-cover rounded-full lg:rounded-3xl"
@@ -37,8 +37,8 @@ export function SobreMiPreview() {
               Hola, soy Andy
             </h2>
             <p className="text-stone-600 text-lg leading-relaxed">
-              Viajé a más de 55 países y 200 ciudades. Safari en África, auroras
-              boreales en Islandia, surf en Costa Rica, maratones en distintos
+              Viajé a más de 50 países y 200 ciudades. Safari en África, auroras
+              boreales en Noruega, surf en Hawaii, maratones en distintos
               continentes.
             </p>
             <p className="mt-4 text-stone-600 text-lg leading-relaxed">

@@ -87,7 +87,7 @@ export default async function BlogPage({
                   </span>
                 </div>
                 <div className="flex flex-col justify-center mt-4 md:mt-0">
-                  <h2 className="text-2xl md:text-3xl font-serif font-semibold text-stone-900 group-hover:text-primary-600 transition-colors mb-2">
+                  <h2 className="text-2xl md:text-3xl font-display font-semibold text-stone-900 group-hover:text-primary-600 transition-colors mb-2">
                     {featuredPost.title}
                   </h2>
                   <p className="text-stone-600 mb-4 line-clamp-2">

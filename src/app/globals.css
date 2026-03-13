@@ -42,9 +42,10 @@
   --color-stone-900: #1c1917;
   --color-stone-950: #0c0a09;
 
-  /* Fonts */
+  /* Fonts - heading = Plus Jakarta Sans, body = Inter (both sans-serif) */
   --font-sans: var(--font-inter), system-ui, sans-serif;
-  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-heading-family: var(--font-heading), "Inter", system-ui, sans-serif;
+  --font-display: var(--font-heading-family);
 
   /* Display font sizes */
   --text-display-xl: clamp(2.5rem, 6vw, 4.5rem);
@@ -92,7 +93,7 @@
 @layer base {
   :root {
     --font-inter: "Inter", system-ui, sans-serif;
-    --font-playfair: "Playfair Display", Georgia, serif;
+    --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
   }
 
   html {
@@ -104,7 +105,7 @@
   }
 
   h1, h2, h3 {
-    @apply font-serif;
+    @apply font-display font-semibold tracking-tight;
   }
 
   h4, h5, h6 {
@@ -201,7 +202,7 @@
   /* Prose para blog */
   .prose-viajarmejor {
     @apply prose prose-stone max-w-none
-           prose-headings:font-serif prose-headings:text-stone-900
+           prose-headings:font-display prose-headings:text-stone-900
            prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline
            prose-img:rounded-2xl
            prose-blockquote:border-primary-400 prose-blockquote:bg-primary-50 prose-blockquote:rounded-r-xl

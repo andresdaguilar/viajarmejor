@@ -58,7 +58,7 @@ export function Testimonios() {
                   />
                 ))}
               </div>
-              <blockquote className="font-serif text-stone-700 text-lg leading-relaxed">
+              <blockquote className="font-display text-stone-700 text-lg leading-relaxed">
                 "{t.quote}"
               </blockquote>
               <p className="mt-6 font-semibold text-stone-900">

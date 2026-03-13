@@ -40,7 +40,7 @@ function AnimatedNumber({
   }, [value, isInView]);
 
   return (
-    <span className="font-serif text-4xl md:text-5xl font-bold text-white">
+    <span className="font-display text-4xl md:text-5xl font-bold text-white">
       {displayValue}
       {suffix}
     </span>
