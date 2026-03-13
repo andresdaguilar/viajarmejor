@@ -16,6 +16,11 @@ const QueDiferencia = dynamic(
     })),
   { ssr: true }
 );
+const ValorROI = dynamic(
+  () =>
+    import("@/components/home/ValorROI").then((m) => ({ default: m.ValorROI })),
+  { ssr: true }
+);
 const PlanesPreview = dynamic(
   () =>
     import("@/components/home/PlanesPreview").then((m) => ({
@@ -71,6 +76,7 @@ export default function HomePage() {
       <Stats />
       <ComoFunciona />
       <QueDiferencia />
+      <ValorROI />
       <PlanesPreview />
       <Testimonios />
       <SobreMiPreview />

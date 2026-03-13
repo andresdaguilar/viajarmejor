@@ -19,7 +19,7 @@ const EXPERIENCIAS = [
     emoji: "🦁",
     titulo: "Safaris en África",
     texto:
-      "Kenya, Tanzania, Sudáfrica. Aprendí que un safari bien planificado es completamente distinto a uno improvisado.",
+      "Safari en Parque Kruger. Aprendí que un safari bien planificado es completamente distinto a uno improvisado.",
   },
   {
     emoji: "🌌",
@@ -31,19 +31,19 @@ const EXPERIENCIAS = [
     emoji: "🏃",
     titulo: "Maratones internacionales",
     texto:
-      "Corrí maratones en distintos continentes. Viajar para correr requiere una logística completamente diferente.",
+      "Participé en carreras en distintos continentes. Viajar para correr requiere una logística completamente diferente.",
   },
   {
     emoji: "🏄",
     titulo: "Viajes de surf",
     texto:
-      "Costa Rica, Portugal, Sudáfrica. Saber dónde están las olas no es suficiente — hay que saber cómo llegar a ellas.",
+      "Brasil, Panamá, Costa Rica, Sudáfrica y Hawaii. Saber dónde están las olas no es suficiente — hay que saber cómo llegar a ellas.",
   },
   {
     emoji: "🚗",
     titulo: "Road trips",
     texto:
-      "Miles de kilómetros en auto por distintos países. Aprendés a leer un destino diferente cuando lo recorrés desde adentro.",
+      "Miles de kms en auto por Irlanda, Escocia, España, Francia, Italia, Croacia, Sudáfrica, California. Aprendés a leer un destino diferente cuando lo recorrés desde adentro.",
   },
   {
     emoji: "🚂",
@@ -54,11 +54,10 @@ const EXPERIENCIAS = [
 ];
 
 const REGIONES = [
-  { nombre: "Europa", paises: 25, total: 50 },
+  { nombre: "Europa", paises: 29, total: 50 },
   { nombre: "América", paises: 15, total: 35 },
   { nombre: "Asia", paises: 8, total: 48 },
-  { nombre: "África", paises: 5, total: 54 },
-  { nombre: "Oceanía", paises: 2, total: 14 },
+  { nombre: "África", paises: 1, total: 54 },
 ];
 
 const VALORES = [
@@ -228,7 +227,7 @@ export default function SobreMiPage() {
                     {region.nombre}
                   </span>
                   <span className="text-stone-500">
-                    {region.paises}+ países
+                    {region.paises} países
                   </span>
                 </div>
                 <div className="h-3 bg-stone-200 rounded-full overflow-hidden">

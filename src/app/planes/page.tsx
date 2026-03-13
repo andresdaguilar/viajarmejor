@@ -8,7 +8,7 @@ import { PLANES, CONTACT } from "@/lib/constants";
 export const metadata = createMetadata({
   title: "Planes y Precios — Viajar Mejor",
   description:
-    "Elegí el plan de asesoría de viaje ideal. Plan Básico desde USD 25, Avanzado desde USD 40, Premium desde USD 65. Incluye Travel Blueprint personalizado.",
+    "Elegí el plan de asesoría de viaje ideal. Plan Básico desde AR$ 35.000, Avanzado desde AR$ 60.000, Premium desde AR$ 99.000. Incluye Travel Blueprint personalizado.",
   path: "/planes",
 });
 
@@ -47,7 +47,7 @@ const FAQ_ITEMS = [
   {
     question: "¿Cómo se paga?",
     answer:
-      "Podés pagar en USD por transferencia bancaria, Wise o Payoneer, o en pesos argentinos por Mercado Pago. El pago se realiza antes de la llamada al reservar tu turno.",
+      "Podés pagar por Mercado Pago o transferencia bancaria. El pago se realiza antes de la llamada al reservar tu turno.",
   },
   {
     question: "¿Qué pasa si no quedo conforme?",

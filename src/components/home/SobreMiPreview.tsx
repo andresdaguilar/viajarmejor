@@ -38,7 +38,7 @@ export function SobreMiPreview() {
             </h2>
             <p className="text-stone-600 text-lg leading-relaxed">
               Más de 200 viajes organizados. Safari en África, auroras boreales
-              en Islandia, surf en Costa Rica, maratones en distintos continentes.
+              en Noruega, surf en Hawaii, maratones en distintos continentes.
             </p>
             <p className="mt-4 text-stone-600 text-lg leading-relaxed">
               Pero lo que más me apasiona no es viajar — es ayudar a otros a

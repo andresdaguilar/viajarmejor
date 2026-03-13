@@ -29,14 +29,17 @@ export function Footer() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Col 1 — Marca */}
           <div className="col-span-2 lg:col-span-1">
-            <Link href="/" className="inline-block mb-4">
+            <Link href="/" className="inline-flex items-center gap-3 mb-4">
               <Image
-                src="/logo.svg"
-                alt={SITE.name}
-                width={120}
-                height={40}
+                src="/Logo_ViajarMejor.png"
+                alt=""
+                width={140}
+                height={44}
                 className="h-8 w-auto brightness-0 invert opacity-90"
               />
+              <span className="font-display font-semibold text-xl text-white">
+                Viajar Mejor
+              </span>
             </Link>
             <p className="text-stone-400 text-sm mb-6 max-w-xs">
               {SITE.tagline}
@@ -73,7 +76,7 @@ export function Footer() {
             <h3 className="text-white font-semibold mb-4">Recursos</h3>
             <ul className="space-y-2">
               {FOOTER_RECURSOS.map((link) => (
-                <li key={link.href}>
+                <li key={link.label}>
                   <Link
                     href={link.href}
                     className="text-stone-400 hover:text-white transition-colors text-sm"
@@ -116,7 +119,15 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-stone-500">
-          <p>© 2025 {SITE.name}. Todos los derechos reservados.</p>
+          <p className="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+            <span>© 2025 {SITE.name}. Todos los derechos reservados.</span>
+            <Link
+              href="/terminos-y-condiciones"
+              className="text-stone-500 hover:text-stone-400 transition-colors"
+            >
+              Términos y condiciones
+            </Link>
+          </p>
           <p>Hecho con ✈️ en Argentina.</p>
         </div>
       </div>

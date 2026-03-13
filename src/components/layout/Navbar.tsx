@@ -48,17 +48,32 @@ export function Navbar() {
     >
       <nav className="container-site h-16 md:h-20 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 shrink-0">
+        <Link href="/" className="flex items-center gap-3 shrink-0">
           <Image
-            src="/logo.svg"
-            alt="Viajar Mejor"
-            width={120}
-            height={40}
+            src="/Logo_ViajarMejor.png"
+            alt=""
+            width={140}
+            height={44}
             className={cn(
               "h-8 w-auto md:h-10",
               isTransparent && "brightness-0 invert"
             )}
           />
+          <span
+            className={cn(
+              "font-display font-semibold text-xl md:text-2xl whitespace-nowrap",
+              isTransparent && "text-white"
+            )}
+          >
+            {isTransparent ? (
+              "Viajar Mejor"
+            ) : (
+              <>
+                <span style={{ color: "#1d5590" }}>Viajar</span>{" "}
+                <span style={{ color: "#4b9fda" }}>Mejor</span>
+              </>
+            )}
+          </span>
         </Link>
 
         {/* Desktop Nav Links - Center */}

@@ -8,6 +8,8 @@ import { z } from "zod";
 import { Check, Lock, MessageCircle, CheckCircle } from "lucide-react";
 import { CalendlyEmbed } from "./CalendlyEmbed";
 import { PLANES, CONTACT } from "@/lib/constants";
+import { formatPriceARS } from "@/lib/utils";
+import { saveReserva } from "@/lib/firebase";
 
 const schema = z.object({
   nombre: z.string().min(2, "Ingresá tu nombre"),
@@ -54,6 +56,7 @@ function ReservaFlowInner() {
     "basico" | "avanzado" | "premium" | null
   >(initialPlan);
   const [pagoConfirmado, setPagoConfirmado] = useState(false);
+  const [guardando, setGuardando] = useState(false);
 
   const form = useForm<FormData>({
     resolver: zodResolver(schema),
@@ -138,7 +141,9 @@ function ReservaFlowInner() {
                     <h4 className="font-semibold text-stone-900">{opt.nombre}</h4>
                     <p className="text-sm text-stone-500">{opt.tagline}</p>
                     <p className="mt-2 font-display text-2xl text-primary-600">
-                      USD {opt.precio}–{opt.precioMax}
+                      {opt.precio === opt.precioMax
+                        ? `${opt.moneda} ${formatPriceARS(opt.precio)}`
+                        : `${opt.moneda} ${formatPriceARS(opt.precio)}–${formatPriceARS(opt.precioMax)}`}
                     </p>
                   </div>
                   {selectedPlan === opt.id && (
@@ -161,7 +166,29 @@ function ReservaFlowInner() {
       {/* Step 2 */}
       {step === 2 && (
         <form
-          onSubmit={form.handleSubmit(() => setStep(3))}
+          onSubmit={form.handleSubmit(async (data) => {
+            if (!selectedPlan || !plan) return;
+            setGuardando(true);
+            try {
+              const id = await saveReserva({
+                nombre: data.nombre,
+                email: data.email,
+                whatsapp: data.whatsapp,
+                destino: data.destino,
+                fechas: data.fechas,
+                grupo: data.grupo,
+                consulta: data.consulta,
+                plan: plan.nombre,
+                planPrecio: plan.precio,
+              });
+              if (id) console.log("[Reserva] Guardada en Firestore:", id);
+            } catch (err) {
+              console.error("[Reserva] No se pudo guardar:", err);
+            } finally {
+              setGuardando(false);
+            }
+            setStep(3);
+          })}
           className="space-y-6"
         >
           <h3 className="text-xl font-semibold text-stone-900 mb-6">
@@ -289,8 +316,12 @@ function ReservaFlowInner() {
             >
               Volver
             </button>
-            <button type="submit" className="btn-primary flex-1">
-              Continuar al pago
+            <button
+              type="submit"
+              disabled={guardando}
+              className="btn-primary flex-1 disabled:opacity-50"
+            >
+              {guardando ? "Guardando..." : "Continuar al pago"}
             </button>
           </div>
         </form>
@@ -306,11 +337,11 @@ function ReservaFlowInner() {
                 Plan: <strong>{plan.nombre}</strong>
               </p>
               <p className="text-stone-600">
-                Precio: USD {plan.precio}–{plan.precioMax}
+                Precio: {plan.moneda} {formatPriceARS(plan.precio)}
               </p>
               <div className="border-t border-stone-200 pt-4 mt-4">
                 <p className="font-semibold">
-                  Total: USD {Math.round((plan.precio + plan.precioMax) / 2)}
+                  Total: {plan.moneda} {formatPriceARS(plan.precio)}
                 </p>
               </div>
             </div>
@@ -323,15 +354,13 @@ function ReservaFlowInner() {
             <div className="space-y-6">
               <div className="card p-6">
                 <h5 className="font-medium text-stone-900 mb-2">
-                  Transferencia / Wise
+                  Transferencia / Mercado Pago
                 </h5>
                 <p className="text-sm text-stone-600 mb-4">
-                  Realizá el pago a Wise: andy@viajarmejor.travel o por
-                  transferencia bancaria (te envío los datos por WhatsApp).
+                  Alias: <strong className="text-stone-900">batman.aguilar.mp</strong>
                 </p>
                 <p className="text-sm text-stone-600 mb-4">
-                  Monto: USD {Math.round((plan.precio + plan.precioMax) / 2)}{" "}
-                  o equivalente en ARS al cambio del día.
+                  Monto: {plan.moneda} {formatPriceARS(plan.precio)}
                 </p>
                 <a
                   href={getComprobanteUrl()}
@@ -354,10 +383,11 @@ function ReservaFlowInner() {
 
               <div className="card p-6 bg-stone-50">
                 <h5 className="font-medium text-stone-900 mb-2">
-                  Mercado Pago (pesos)
+                  Mercado Pago
                 </h5>
                 <p className="text-sm text-stone-600 mb-4">
-                  Próximamente disponible el pago en pesos.
+                  Podés pagar por Mercado Pago. Escribinos por WhatsApp y te
+                  enviamos el link de pago.
                 </p>
                 <a
                   href={CONTACT.whatsappUrl}
@@ -365,7 +395,7 @@ function ReservaFlowInner() {
                   rel="noopener noreferrer"
                   className="btn-whatsapp inline-flex"
                 >
-                  Contactar por WhatsApp
+                  Solicitar link de pago por WhatsApp
                 </a>
               </div>
             </div>

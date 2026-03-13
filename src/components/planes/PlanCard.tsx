@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Check, Minus } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn, formatPriceARS } from "@/lib/utils";
 
 interface PlanCardProps {
   nombre: string;
@@ -40,11 +40,11 @@ export function PlanCard({
       <p className="mt-2 text-sm text-stone-500">{descripcion}</p>
       <div className="mt-6 py-6 border-y border-stone-100">
         <p className="font-display text-4xl text-primary-600">
-          Desde {moneda} {precio}
+          {moneda} {formatPriceARS(precio)}
         </p>
         {precioMax > precio && (
           <p className="text-sm text-stone-500 mt-1">
-            (hasta {moneda} {precioMax})
+            (hasta {moneda} {formatPriceARS(precioMax)})
           </p>
         )}
       </div>

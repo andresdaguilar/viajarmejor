@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { PLANES, CONTACT } from "@/lib/constants";
-import { cn } from "@/lib/utils";
+import { cn, formatPriceARS } from "@/lib/utils";
 
 const WHATSAPP_URL = `${CONTACT.whatsappUrl}?text=${encodeURIComponent(CONTACT.whatsappMessage)}`;
 
@@ -47,7 +47,7 @@ export function PlanesPreview() {
                   {plan.nombre}
                 </h3>
                 <p className="mt-2 text-3xl font-bold text-primary-600">
-                  Desde USD {plan.precio}
+                  {plan.moneda} {formatPriceARS(plan.precio)}
                 </p>
                 <p className="mt-1 text-sm text-stone-500">{plan.descripcion}</p>
                 <ul className="mt-6 space-y-2 flex-1">

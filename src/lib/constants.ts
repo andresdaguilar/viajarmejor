@@ -17,9 +17,9 @@ export const CONTACT = {
 export const PLANES = {
   basico: {
     nombre: "Plan Básico",
-    precio: 25,
-    precioMax: 30,
-    moneda: "USD",
+    precio: 35000,
+    precioMax: 35000,
+    moneda: "AR$",
     descripcion:
       "Planificación completa de tu viaje con itinerario personalizado.",
     incluye: [
@@ -35,9 +35,9 @@ export const PLANES = {
   },
   avanzado: {
     nombre: "Plan Avanzado",
-    precio: 40,
-    precioMax: 50,
-    moneda: "USD",
+    precio: 60000,
+    precioMax: 60000,
+    moneda: "AR$",
     descripcion:
       "Todo lo del Plan Básico más asesoría para trámites y documentación.",
     incluye: [
@@ -50,9 +50,9 @@ export const PLANES = {
   },
   premium: {
     nombre: "Plan Premium",
-    precio: 65,
-    precioMax: 80,
-    moneda: "USD",
+    precio: 99000,
+    precioMax: 99000,
+    moneda: "AR$",
     descripcion:
       "Acompañamiento completo antes, durante y ante cualquier imprevisto.",
     incluye: [

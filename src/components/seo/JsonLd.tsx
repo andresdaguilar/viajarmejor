@@ -8,7 +8,7 @@ export function LocalBusinessJsonLd() {
     description: SITE.description,
     url: SITE.url,
     telephone: CONTACT.whatsapp,
-    priceRange: "USD 25–80",
+    priceRange: "AR$ 35.000–99.000",
     serviceArea: {
       "@type": "GeoCircle",
       geoMidpoint: {
@@ -25,20 +25,20 @@ export function LocalBusinessJsonLd() {
         {
           "@type": "Offer",
           name: "Plan Básico",
-          price: "25",
-          priceCurrency: "USD",
+          price: "35000",
+          priceCurrency: "ARS",
         },
         {
           "@type": "Offer",
           name: "Plan Avanzado",
-          price: "40",
-          priceCurrency: "USD",
+          price: "60000",
+          priceCurrency: "ARS",
         },
         {
           "@type": "Offer",
           name: "Plan Premium",
-          price: "65",
-          priceCurrency: "USD",
+          price: "99000",
+          priceCurrency: "ARS",
         },
       ],
     },

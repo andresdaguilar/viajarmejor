@@ -22,9 +22,9 @@ const FAQ_ITEMS = [
       "El pago es previo — se confirma la llamada una vez acreditado.",
   },
   {
-    question: "¿Puedo pagar en pesos?",
+    question: "¿Cómo puedo pagar?",
     answer:
-      "Sí, podés pagar el equivalente en pesos argentinos al cambio del día.",
+      "Podés pagar por Mercado Pago o transferencia bancaria. El pago es en pesos argentinos.",
   },
 ];
 
