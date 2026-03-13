@@ -37,6 +37,13 @@ const SobreMiPreview = dynamic(
     })),
   { ssr: true }
 );
+const CountryFlags = dynamic(
+  () =>
+    import("@/components/home/CountryFlags").then((m) => ({
+      default: m.CountryFlags,
+    })),
+  { ssr: true }
+);
 const BlogPreview = dynamic(
   () =>
     import("@/components/home/BlogPreview").then((m) => ({ default: m.BlogPreview })),
@@ -67,6 +74,7 @@ export default function HomePage() {
       <PlanesPreview />
       <Testimonios />
       <SobreMiPreview />
+      <CountryFlags />
       <BlogPreview posts={blogPosts} />
       <CTAFinal />
     </>

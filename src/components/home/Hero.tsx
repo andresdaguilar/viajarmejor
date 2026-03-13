@@ -16,9 +16,9 @@ const trustItems = [
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center -mt-16 pt-16 overflow-hidden">
-      {/* Background image - using gradient as fallback when no image */}
-      <div className="absolute inset-0 bg-primary-950">
+    <section className="relative min-h-screen flex items-center -mt-16 md:-mt-20 pt-16 md:pt-20 overflow-hidden">
+      {/* Background image - extends slightly beyond to avoid white gap at top */}
+      <div className="absolute inset-0 -top-1 bg-primary-950">
         <Image
           src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1920"
           alt=""

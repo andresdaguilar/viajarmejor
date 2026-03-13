@@ -34,7 +34,8 @@ export function Navbar() {
     setIsMobileMenuOpen(false);
   }, [pathname]);
 
-  const isTransparent = !isScrolled;
+  // Solo transparente en home (hero oscuro); en otras páginas siempre visible
+  const isTransparent = pathname === "/" && !isScrolled;
 
   return (
     <header
