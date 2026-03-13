@@ -8,7 +8,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Check } from "lucide-react";
 
 const DIFERENCIALES = [
-  "Experiencia real en 55+ países — no información de internet",
+  "Experiencia real en +50 países — no información de internet",
   "Asesoría ante imprevistos: vuelos cancelados, equipaje perdido, overbooking",
   "Soporte durante el viaje (Plan Premium): estás acompañado aunque estés lejos",
   "Contenido adaptado a vos: tu destino, tu presupuesto, tu grupo de viaje",

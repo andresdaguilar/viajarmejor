@@ -4,10 +4,10 @@ import { useRef, useEffect, useState } from "react";
 import { motion, useInView } from "framer-motion";
 
 const STATS = [
-  { value: 55, suffix: "+", label: "Países visitados" },
-  { value: 200, suffix: "+", label: "Ciudades recorridas" },
-  { value: 10, suffix: "+", label: "Años viajando" },
-  { value: 100, suffix: "%", label: "Asesoría personalizada" },
+  { value: 50, suffix: "+", label: "Países" },
+  { value: 200, suffix: "+", label: "Ciudades" },
+  { value: 200, suffix: "+", label: "Viajes organizados" },
+  { value: 100, suffix: "%", label: "Personalizado" },
 ];
 
 function AnimatedNumber({

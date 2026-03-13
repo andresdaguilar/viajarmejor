@@ -68,7 +68,9 @@ function ReservaFlowInner() {
     },
   });
 
-  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com";
+  const calendlyUrl =
+    process.env.NEXT_PUBLIC_CALENDLY_URL ||
+    "https://calendly.com/viajarmejor-travel/30min";
 
   const plan = selectedPlan ? PLANES[selectedPlan] : null;
 

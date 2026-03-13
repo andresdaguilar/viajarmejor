@@ -37,9 +37,8 @@ export function SobreMiPreview() {
               Hola, soy Andy
             </h2>
             <p className="text-stone-600 text-lg leading-relaxed">
-              Viajé a más de 50 países y 200 ciudades. Safari en África, auroras
-              boreales en Noruega, surf en Hawaii, maratones en distintos
-              continentes.
+              Más de 200 viajes organizados. Safari en África, auroras boreales
+              en Islandia, surf en Costa Rica, maratones en distintos continentes.
             </p>
             <p className="mt-4 text-stone-600 text-lg leading-relaxed">
               Pero lo que más me apasiona no es viajar — es ayudar a otros a

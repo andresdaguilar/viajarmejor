@@ -2,7 +2,7 @@ export const SITE = {
   name: "Viajar Mejor",
   tagline: "Viajá con inteligencia. Aprovechá cada destino.",
   description:
-    "Asesoría de viajes personalizada para personas de Argentina y Latinoamérica. Más de 55 países de experiencia real.",
+    "Asesoría de viajes personalizada para Argentina y Latinoamérica. Más de 200 viajes organizados con experiencia en +50 países.",
   url: "https://viajarmejor.travel",
   locale: "es-AR",
 };

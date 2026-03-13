@@ -8,7 +8,7 @@ import { CONTACT } from "@/lib/constants";
 export const metadata = createMetadata({
   title: "Sobre mí — Andy | Viajar Mejor",
   description:
-    "Conocé a Andy, asesor de viajes con experiencia en más de 55 países y 200 ciudades. La persona detrás de Viajar Mejor.",
+    "Conocé a Andy, asesor de viajes con +50 países, 200+ ciudades y más de 200 viajes organizados. La persona detrás de Viajar Mejor.",
   path: "/sobre-mi",
 });
 
@@ -113,9 +113,8 @@ export default function SobreMiPage() {
                 Asesor de viajes y fundador de Viajar Mejor
               </p>
               <p className="text-stone-600 text-lg leading-relaxed">
-                Viajé a más de 50 países y 200 ciudades. No como influencer —
-                sino como alguien que necesitaba entender cada destino antes de
-                llegar.
+                He organizado más de 200 viajes para otros. No como influencer —
+                como alguien que necesitaba entender cada destino antes de llegar.
               </p>
               <p className="mt-4 text-stone-600 text-lg leading-relaxed">
                 Con el tiempo empecé a ayudar a amigos y familia a planificar sus
@@ -161,7 +160,7 @@ export default function SobreMiPage() {
 
             <div>
               <h3 className="text-xl font-semibold text-stone-900 mb-4">
-                Lo que me enseñaron 55 países
+                Lo que me enseñaron +50 países
               </h3>
               <p>
                 La diferencia entre ser turista y ser viajero es enorme. El
