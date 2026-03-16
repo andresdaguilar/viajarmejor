@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Instagram } from "lucide-react";
 import { SITE, CONTACT } from "@/lib/constants";
 
 const FOOTER_SERVICIO = [
@@ -104,12 +105,14 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://instagram.com/viajarmejor"
+                  href="https://instagram.com/viajarmejor.travel"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-stone-400 hover:text-white transition-colors"
+                  className="inline-flex items-center gap-2 text-stone-400 hover:text-white transition-colors"
+                  aria-label="Instagram @viajarmejor.travel"
                 >
-                  Instagram: @viajarmejor
+                  <Instagram className="w-5 h-5 shrink-0 text-white" />
+                  @viajarmejor.travel
                 </a>
               </li>
               <li className="text-stone-400">{SITE.url.replace("https://", "")}</li>

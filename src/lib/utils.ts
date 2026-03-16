@@ -14,3 +14,8 @@ export function formatDate(date: string) {
 export function formatPriceARS(value: number) {
   return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
+
+/** Capitaliza la primera letra de cada palabra (para opciones del wizard) */
+export function toTitleCase(str: string): string {
+  return str.replace(/\b\w/g, (c) => c.toUpperCase());
+}

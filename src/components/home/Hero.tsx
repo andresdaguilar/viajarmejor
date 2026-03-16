@@ -54,7 +54,7 @@ export function Hero() {
             className="mt-6 text-lg text-white/80 max-w-2xl"
           >
             Asesoría de viajes personalizada para que no desperdicies ni un día,
-            ni un peso, ni una experiencia. Más de 200 viajes organizados.
+            ni un peso, ni una experiencia. Más de 150 viajes organizados.
           </motion.p>
 
           <motion.div

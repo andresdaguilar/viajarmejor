@@ -1,0 +1,13 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "viajePreparar",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "reservaId", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

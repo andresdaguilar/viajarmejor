@@ -99,11 +99,11 @@ export default async function ArticlePage({
             <p className="text-xl text-stone-600 mb-8">{post.description}</p>
             <div className="flex items-center gap-4 mb-8">
               <Image
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80"
+                src="/images/andy.jpg"
                 alt="Andy"
                 width={48}
                 height={48}
-                className="rounded-full"
+                className="rounded-full object-cover"
               />
               <div>
                 <span className="font-medium text-stone-900">Andy</span>

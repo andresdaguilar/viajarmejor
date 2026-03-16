@@ -8,7 +8,7 @@ import { CONTACT } from "@/lib/constants";
 export const metadata = createMetadata({
   title: "Sobre mí — Andy | Viajar Mejor",
   description:
-    "Conocé a Andy, asesor de viajes con +50 países, 200+ ciudades y más de 200 viajes organizados. La persona detrás de Viajar Mejor.",
+    "Conocé a Andy, asesor de viajes con +50 países, 200+ ciudades y más de 150 viajes organizados. La persona detrás de Viajar Mejor.",
   path: "/sobre-mi",
 });
 
@@ -112,7 +112,7 @@ export default function SobreMiPage() {
                 Asesor de viajes y fundador de Viajar Mejor
               </p>
               <p className="text-stone-600 text-lg leading-relaxed">
-                He organizado más de 200 viajes para otros. No como influencer —
+                He organizado más de 150 viajes para otros. No como influencer —
                 como alguien que necesitaba entender cada destino antes de llegar.
               </p>
               <p className="mt-4 text-stone-600 text-lg leading-relaxed">

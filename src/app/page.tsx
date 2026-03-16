@@ -63,7 +63,7 @@ const CTAFinal = dynamic(
 export const metadata = createMetadata({
   title: "Viajar Mejor — Asesoría de viajes personalizada",
   description:
-    "Asesoría de viajes personalizada para Argentina y Latinoamérica. Más de 200 viajes organizados. Travel Blueprint, soporte antes y durante el viaje.",
+    "Asesoría de viajes personalizada para Argentina y Latinoamérica. Más de 150 viajes organizados. Travel Blueprint, soporte antes y durante el viaje.",
   path: "/",
 });
 

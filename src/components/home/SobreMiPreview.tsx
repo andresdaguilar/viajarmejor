@@ -37,7 +37,7 @@ export function SobreMiPreview() {
               Hola, soy Andy
             </h2>
             <p className="text-stone-600 text-lg leading-relaxed">
-              Más de 200 viajes organizados. Safari en África, auroras boreales
+              Más de 150 viajes organizados. Safari en África, auroras boreales
               en Noruega, surf en Hawaii, maratones en distintos continentes.
             </p>
             <p className="mt-4 text-stone-600 text-lg leading-relaxed">

@@ -6,7 +6,7 @@ import { motion, useInView } from "framer-motion";
 const STATS = [
   { value: 50, suffix: "+", label: "Países" },
   { value: 200, suffix: "+", label: "Ciudades" },
-  { value: 200, suffix: "+", label: "Viajes organizados" },
+  { value: 150, suffix: "+", label: "Viajes organizados" },
   { value: 100, suffix: "%", label: "Personalizado" },
 ];
 
