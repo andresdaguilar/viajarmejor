@@ -7,8 +7,11 @@ export function LocalBusinessJsonLd() {
     name: SITE.name,
     description: SITE.description,
     url: SITE.url,
-    telephone: CONTACT.whatsapp,
+    image: `${SITE.url}/Logo_ViajarMejor.png`,
+    telephone: CONTACT.whatsapp.replace(/\s/g, ""),
     priceRange: "AR$ 35.000–99.000",
+    areaServed: "Argentina, Latinoamérica",
+    sameAs: ["https://www.instagram.com/viajarmejor.travel"],
     serviceArea: {
       "@type": "GeoCircle",
       geoMidpoint: {

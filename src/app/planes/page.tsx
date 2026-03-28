@@ -10,6 +10,7 @@ export const metadata = createMetadata({
   description:
     "Elegí el plan de asesoría de viaje ideal. Plan Básico desde AR$ 35.000, Avanzado desde AR$ 60.000, Premium desde AR$ 99.000. Incluye Travel Blueprint personalizado.",
   path: "/planes",
+  keywords: ["planes asesoría viajes", "precios viajes", "Travel Blueprint", "planificación viaje Argentina"],
 });
 
 const COMPARATIVA = [

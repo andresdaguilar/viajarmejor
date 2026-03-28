@@ -25,21 +25,45 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.name}`,
   },
   description: SITE.description,
+  keywords: [
+    "asesoría de viajes",
+    "planificación de viajes",
+    "viajes personalizados",
+    "Argentina",
+    "Latinoamérica",
+    "Europa",
+    "itinerario de viaje",
+    "asesor viajero",
+    "travel consultant",
+  ],
   metadataBase: new URL(SITE.url),
+  icons: {
+    icon: [
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/Logo_ViajarMejor.png", sizes: "any", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon-32.png",
+  },
   openGraph: {
     type: "website",
     locale: "es_AR",
     url: SITE.url,
     siteName: SITE.name,
-    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: `${SITE.name} — ${SITE.tagline}` }],
   },
   twitter: {
     card: "summary_large_image",
+    title: SITE.name,
+    description: SITE.description,
   },
   robots: {
     index: true,
     follow: true,
   },
+  ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION && {
+    verification: { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION },
+  }),
 };
 
 export default function RootLayout({

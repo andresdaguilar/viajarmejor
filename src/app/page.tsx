@@ -65,6 +65,14 @@ export const metadata = createMetadata({
   description:
     "Asesoría de viajes personalizada para Argentina y Latinoamérica. Más de 150 viajes organizados. Travel Blueprint, soporte antes y durante el viaje.",
   path: "/",
+  keywords: [
+    "asesoría de viajes",
+    "planificación viajes",
+    "viajes personalizados Argentina",
+    "travel consultant",
+    "itinerario viaje Europa",
+    "asesor viajero",
+  ],
 });
 
 export default function HomePage() {

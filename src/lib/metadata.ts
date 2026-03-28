@@ -6,6 +6,7 @@ interface PageMetaOptions {
   description: string;
   path?: string;
   image?: string;
+  keywords?: string[];
 }
 
 export function createMetadata({
@@ -13,13 +14,15 @@ export function createMetadata({
   description,
   path = "",
   image,
+  keywords,
 }: PageMetaOptions): Metadata {
   const url = `${SITE.url}${path}`;
-  const ogImage = image || `${SITE.url}/images/og-image.jpg`;
+  const ogImage = image || `${SITE.url}/opengraph-image`;
 
   return {
     title,
     description,
+    keywords: keywords?.length ? keywords : undefined,
     alternates: { canonical: url },
     openGraph: {
       title,

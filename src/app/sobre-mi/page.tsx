@@ -10,6 +10,7 @@ export const metadata = createMetadata({
   description:
     "Conocé a Andy, asesor de viajes con +50 países, 200+ ciudades y más de 150 viajes organizados. La persona detrás de Viajar Mejor.",
   path: "/sobre-mi",
+  keywords: ["asesor viajes", "Andy viajes", "Viajar Mejor", "experiencia viajera"],
 });
 
 const WHATSAPP_URL = `${CONTACT.whatsappUrl}?text=${encodeURIComponent(CONTACT.whatsappMessage)}`;
